@@ -110,21 +110,21 @@ class名称和文件名要完全一致,大小写敏感，例如`Name.java`
 * 输入相应数据
     - 读取字符串使用`scanner.nextLine()`
     - 读取整数使用`scanner.nextInt()`
-    - 
-```
-import java.util.Scanner;
+    - 例如
+        ```
+        import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("请输入上一次成绩：");
-        int a = scanner.nextInt();
-        System.out.println("请输入本次成绩：");
-        int b = scanner.nextInt();
-        float c = 0;
-        c = (float)(b-a)/a*100;
-        System.out.printf("%.2f%%",c);
+        public class Main {
+            public static void main(String[] args) {
+                Scanner scanner = new Scanner(System.in);
+                System.out.println("请输入上一次成绩：");
+                int a = scanner.nextInt();
+                System.out.println("请输入本次成绩：");
+                int b = scanner.nextInt();
+                float c = 0;
+                c = (float)(b-a)/a*100;
+                System.out.printf("%.2f%%",c);
 
-    }
-}
-```
+            }
+        }
+        ```
